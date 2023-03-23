@@ -1,0 +1,79 @@
+.vision{
+    padding: 60px 0 70px 0;
+    background-color: $light-color;
+    overflow: hidden;
+}
+.vision-parent{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 30px;
+    .vision-item{
+        padding: 35px 30px;
+        text-align: center;
+        background-color: $dark-color;
+    }
+    .vision-icon{
+        font-size: 40px;
+        color: #e3cb7b;
+        margin-bottom: 20px;
+    }
+    .vision-title{
+        font-size: 20px;
+        color: #e3cb7b;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    .vision-desc{
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+        text-align: justify;
+        text-align-last: center;
+    }
+}
+
+html[dir="ltr"]{
+    .vision-parent .vision-desc{
+        line-height: 1.45;
+    }
+}
+
+
+@include max-992 {
+    .vision-parent{
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+    .vision-parent .vision-item{
+        width: calc(50% - 15px);
+        margin-bottom: 30px;
+    }
+}
+
+@include max-768 {
+    .vision-parent{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .vision{
+        padding: 20px 0 0px 0;
+    }
+    .vision-parent .vision-item{
+        padding: 20px;
+        width: auto;
+        margin-bottom: 0;
+    }
+    .vision-parent .vision-desc{
+        line-height: 1.65;
+    }
+    .vision-parent .vision-icon{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .vision-parent .vision-title{
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+}

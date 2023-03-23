@@ -1,0 +1,46 @@
+.body-overflow-hidden {
+    overflow: hidden;
+}
+
+@include max-768 {
+    .show-nav-overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+.li-drop-scroll {
+    padding: 8px 0;
+}
+
+.logo-scroll {
+    width: 70px;
+}
+
+.main-nav-scroll {
+   padding: 8px 0;
+}
+
+
+
+
+  .fixed {
+    position: fixed;
+    top: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    z-index: 50;
+    margin: 0;
+  }
+
+  .fixsedt {
+    top: -180px;
+    transition: all linear .5s;
+  }
+  
+
+  .header-social .social-width {
+    width: 35px;
+    height: 35px;
+  }
