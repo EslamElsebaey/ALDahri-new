@@ -68,6 +68,9 @@
 //  media
 
 @include max-768{
+    .news-item .news-img-wrapper img{
+        min-height: 170px;
+    }
     .news-item .news-item-desc p{
         font-size: 14px;
         line-height: 1.7;

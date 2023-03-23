@@ -16,7 +16,7 @@ $(document).ready(function(){
 // main swiper
 const mainSwiper = new Swiper('.mainBanner .swiper', {
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   navigation: {
     nextEl: ' .mainBanner .swiper-button-next',
     prevEl: '.mainBanner .swiper-button-prev',

@@ -563,20 +563,18 @@ nav .closeBtn {
     visibility: hidden;
   }
 }
-.mainBanner .swiper-backface-hidden .swiper-slide {
-  min-height: 100%;
-}
 .mainBanner .mainslider-item {
   text-align: center;
   position: relative;
 }
 .mainBanner .mainslider-item figure {
   margin: 0;
-  height: 100%;
+  width: 100%;
 }
 .mainBanner .mainslider-item figure img {
   width: 100%;
-  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .mainBanner .overlay {
   position: absolute;
@@ -603,10 +601,6 @@ nav .closeBtn {
 }
 .mainBanner .mainBanner-parent {
   position: relative;
-  height: 100%;
-}
-.mainBanner .swiper {
-  height: 100%;
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
@@ -629,14 +623,6 @@ nav .closeBtn {
   font-weight: 700;
   text-align: center;
   margin-bottom: 0;
-}
-
-.mainBanner-link {
-  height: 100%;
-}
-.mainBanner-link img {
-  width: 100%;
-  height: 100%;
 }
 
 .mainBanner .swiper-button-prev, .mainBanner .swiper-rtl .swiper-button-next, .mainBanner .swiper-button-next, .mainBanner .swiper-rtl .swiper-button-prev {
@@ -692,14 +678,12 @@ nav .closeBtn {
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .mainBanner {
-    height: calc(100vh - 197px);
-  }
-}
 @media only screen and (max-width: 767px) {
   .banner-desc h2 {
     font-size: 22px;
+  }
+  .mainBanner .mainslider-item figure img {
+    min-height: 200px;
   }
 }
 .about {
@@ -975,6 +959,8 @@ html[dir=ltr] .vision-parent .vision-desc {
 .department-img img {
   width: 100%;
   transition: all linear 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .department-title {
@@ -1211,6 +1197,9 @@ html[dir=ltr] .department-title {
 }
 
 @media only screen and (max-width: 767px) {
+  .news-item .news-img-wrapper img {
+    min-height: 170px;
+  }
   .news-item .news-item-desc p {
     font-size: 14px;
     line-height: 1.7;
