@@ -277,6 +277,12 @@ html[dir="ltr"]{
     }
     .copyright p {
        margin-bottom: 5px;
+       width: 100%;
+       text-align: center;
+    }
+    .copyright > span{
+        width: 100%;
+        text-align: center;
     }
   
     footer .footer-title{

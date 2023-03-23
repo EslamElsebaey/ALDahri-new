@@ -1498,6 +1498,12 @@ html[dir=ltr] .newsletter p {
   }
   .copyright p {
     margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .copyright > span {
+    width: 100%;
+    text-align: center;
   }
   footer .footer-title {
     margin-bottom: 0;
