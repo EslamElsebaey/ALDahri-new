@@ -1423,8 +1423,6 @@ html[dir=ltr] .newsletter p {
 @media only screen and (min-width: 768px) {
   .quick-links ul li a:hover {
     color: #e3cb7b;
-    -webkit-margin-start: 10px;
-            margin-inline-start: 10px;
   }
 }
 @media only screen and (max-width: 991px) {

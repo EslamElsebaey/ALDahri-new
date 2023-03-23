@@ -195,7 +195,7 @@ html[dir="ltr"]{
 @include min-768 {
     .quick-links ul li a:hover{
         color: $second-color;
-        margin-inline-start: 10px;
+        // margin-inline-start: 10px;
     }
 }
 
