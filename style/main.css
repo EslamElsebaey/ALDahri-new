@@ -1,27 +1,27 @@
 @font-face {
   font-family: "sst-Arabic";
-  src: url("../../../fonts/SST-ARABIC-LIGHT.TTF") format("truetype");
+  src: url("../fonts/SST-ARABIC-LIGHT.TTF") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "sst-Arabic";
-  src: url("../../../fonts/SST-ARABIC-ROMAN.TTF") format("truetype");
+  src: url("../fonts/SST-ARABIC-ROMAN.TTF") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "sst-Arabic";
-  src: url("../../../fonts/SST-ARABIC-MEDIUM.TTF") format("truetype");
+  src: url("../fonts/SST-ARABIC-MEDIUM.TTF") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "sst-Arabic";
-  src: url("../../../fonts/SST-ARABIC-BOLD.TTF") format("truetype");
+  src: url("../fonts/SST-ARABIC-BOLD.TTF") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -200,7 +200,7 @@ nav {
 }
 
 .topHeader {
-  background-image: url(../../../images/header-bg.png);
+  background-image: url(../images/header-bg.png);
   border-bottom: 2px solid #e3cb7b;
 }
 
@@ -808,7 +808,7 @@ html[dir=ltr] .about .about-desc p {
   overflow: hidden;
   padding: 50px 0;
   background-color: #290A08;
-  background-image: url(../../../images/shape.png);
+  background-image: url(../images/shape.png);
   background-repeat: no-repeat;
   background-position: center 0%;
 }
@@ -1243,7 +1243,7 @@ html[dir=ltr] .message input {
 }
 
 footer {
-  background-image: url(../../../images/footer-bg.png);
+  background-image: url(../images/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0 40px 0;
