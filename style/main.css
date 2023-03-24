@@ -188,7 +188,7 @@ body {
 }
 header {
   transition: all linear 0.6s;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -245,7 +245,7 @@ nav {
   background-size: 100% 300%;
 }
 .header-social .header-social-ancor:hover {
-  background-position: 0% 75%;
+  background-position: 0% 80%;
 }
 .header-social .header-social-ancor:hover i {
   color: #290a08;
@@ -333,6 +333,10 @@ nav {
 .header-social .header-social-ancor:last-of-type {
   -webkit-margin-end: 0;
           margin-inline-end: 0;
+}
+
+.logo img {
+  transition: all linear 0.3s;
 }
 
 nav {
@@ -713,18 +717,14 @@ nav .closeBtn {
 .about .about-desc .know-us {
   min-width: 181px;
   border-radius: 25px;
-  background-image: radial-gradient(circle at center, #bba159 0%, #8b732f 100%);
   font-size: 16px;
   color: #290a08;
   font-weight: 500;
   padding: 13px 43px;
-  background-image: linear-gradient(#8b732f 0%, #bba159 50%, rgba(0, 0, 0, 0.302) 50%, rgba(0, 0, 0, 0.302) 100%);
-  background-position: 0% 0%;
-  transition: all linear 0.3s;
-  background-size: 100% 300%;
+  background-image: linear-gradient(#BBA259, #876F32, #8B7330);
 }
 .about .about-desc .know-us:hover {
-  background-position: 0% 80%;
+  background-image: linear-gradient(#AA161B, #E9383D, #A1151C);
   color: #fff;
 }
 
@@ -1021,13 +1021,10 @@ html[dir=ltr] .department-title {
   justify-content: center;
   height: 45px;
   border-radius: 22px;
-  background-image: linear-gradient(#8b732f 0%, #bba159 50%, rgba(0, 0, 0, 0.302) 50%, rgba(0, 0, 0, 0.302) 100%);
-  background-position: 0% 0%;
-  transition: all linear 0.3s;
-  background-size: 100% 300%;
+  background-image: linear-gradient(#BBA259, #876F32, #8B7330);
 }
 .gallery .shop-store:hover {
-  background-position: 0% 80%;
+  background-image: linear-gradient(#AA161B, #E9383D, #A1151C);
 }
 .gallery .shop-store:hover span {
   color: #fff;
@@ -1045,7 +1042,6 @@ html[dir=ltr] .department-title {
   font-size: 18px;
   color: #2b0e0c;
   font-weight: 500;
-  transition: all linear 0.2s;
 }
 
 .shop-btn-div {
@@ -1308,7 +1304,7 @@ html[dir=ltr] .large-li {
   background-size: 100% 300%;
 }
 .contact ul li a:hover {
-  background-position: 0% 75%;
+  background-position: 0% 82%;
 }
 .contact ul li a:hover i {
   color: #290a08;
@@ -1349,13 +1345,10 @@ html[dir=ltr] .newsletter p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#8b732f 0%, #bba159 50%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 100%);
-  background-position: 0% 0%;
-  transition: all linear 0.3s;
-  background-size: 100% 300%;
+  background-image: linear-gradient(#BBA259, #876F32, #8B7330);
 }
 .message button:hover {
-  background-position: 0% 80%;
+  background-image: linear-gradient(#AA161B, #E9383D, #A1151C);
 }
 .message button:hover i {
   color: #fff;
@@ -1547,6 +1540,7 @@ html[dir=ltr] .newsletter p {
 
 .logo-scroll {
   width: 70px;
+  transition: all linear 0.3s;
 }
 
 .main-nav-scroll {

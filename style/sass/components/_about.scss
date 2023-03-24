@@ -24,17 +24,13 @@
         .know-us{
             min-width: 181px;
             border-radius: 25px;
-            background-image: radial-gradient(circle at center, #bba159 0%, #8b732f 100%);
             font-size: 16px;
             color: #290a08;
             font-weight: 500;
             padding: 13px 43px;
-            background-image: linear-gradient(#8b732f 0%, #bba159 50% , rgba(0 , 0 , 0 , 0.302) 50%, rgba(0 , 0 , 0 , 0.302) 100%  );
-            background-position: 0% 0%;
-            transition: all linear .3s;
-            background-size: 100% 300%;
+            background-image: linear-gradient(#BBA259 , #876F32   , #8B7330   );
             &:hover{
-                background-position: 0% 80%;
+                background-image: linear-gradient(#AA161B , #E9383D  , #A1151C  );
                 color: #fff;
             }
         }

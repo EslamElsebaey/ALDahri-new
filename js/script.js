@@ -16,7 +16,7 @@ $(document).ready(function(){
 // main swiper
 const mainSwiper = new Swiper('.mainBanner .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   navigation: {
     nextEl: ' .mainBanner .swiper-button-next',
     prevEl: '.mainBanner .swiper-button-prev',
@@ -172,24 +172,23 @@ $(window).on("scroll", function () {
         $(".main-nav").addClass("main-nav-scroll");
         $(".header-social .header-social-ancor").addClass("social-width")
       } 
-  } else {
-      $("header").removeClass("fixed");
-      $("header").removeClass("header-box-shadow");
-      if($(window).width() > 768){
-        $(".mynav .li-drop").removeClass("li-drop-scroll");
-        $(".logo img").removeClass("logo-scroll");
-        $(".main-nav").removeClass("main-nav-scroll");
-        $(".header-social .header-social-ancor").removeClass("social-width")
-      } 
+  } 
+  if ($(window).scrollTop() == 0){
+    if($(window).width() > 768){
+      $(".mynav .li-drop").removeClass("li-drop-scroll");
+      $(".logo img").removeClass("logo-scroll");
+      $(".main-nav").removeClass("main-nav-scroll");
+      $(".header-social .header-social-ancor").removeClass("social-width")
+    } 
   }
 });
-var fixedBar = document.querySelector("header"),
-prevScrollposition = $(window).scrollTop();
+// var fixedBar = document.querySelector("header"),
+// prevScrollposition = $(window).scrollTop();
   
-(window.onscroll = function () {
-  var o = $(window).scrollTop();
-  prevScrollposition < o && prevScrollposition > 0 ? fixedBar.classList.add("fixsedt") : fixedBar.classList.remove("fixsedt"), (prevScrollposition = o);
-})   
+// (window.onscroll = function () {
+//   var o = $(window).scrollTop();
+//   prevScrollposition < o && prevScrollposition > 0 ? fixedBar.classList.add("fixsedt") : fixedBar.classList.remove("fixsedt"), (prevScrollposition = o);
+// })   
 
 
    
