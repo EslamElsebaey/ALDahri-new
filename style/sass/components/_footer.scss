@@ -128,12 +128,28 @@ html[dir="ltr"]{
         top: 50%;
         display: flex;
         align-items: center;
+        transition: all linear .3s;
+        z-index: 1;
         justify-content: center;
         background-image: linear-gradient(#BBA259 , #876F32   , #8B7330   );
-        &:hover{
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
             background-image: linear-gradient(#AA161B , #E9383D  , #A1151C  );
+            opacity: 0;
+            z-index: -1;
+            transition: all linear .3s;
+            border-radius: 50%;
+        }
+        &:hover{
+            // background-image: linear-gradient(#AA161B , #E9383D  , #A1151C  );
             i{
                 color: #fff;
+                transition: all linear .3s;
+            }
+            &::before{
+                opacity: 1;
             }
         }
     }

@@ -718,11 +718,26 @@ nav .closeBtn {
   color: #290a08;
   font-weight: 500;
   padding: 13px 43px;
+  position: relative;
+  z-index: 1;
+  transition: all linear 0.3s;
   background-image: linear-gradient(#BBA259, #876F32, #8B7330);
 }
-.about .about-desc .know-us:hover {
+.about .about-desc .know-us::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: linear-gradient(#AA161B, #E9383D, #A1151C);
+  opacity: 0;
+  z-index: -1;
+  transition: all linear 0.3s;
+  border-radius: 25px;
+}
+.about .about-desc .know-us:hover {
   color: #fff;
+}
+.about .about-desc .know-us:hover::before {
+  opacity: 1;
 }
 
 .about-vid-div {
@@ -1018,16 +1033,34 @@ html[dir=ltr] .department-title {
   justify-content: center;
   height: 45px;
   border-radius: 22px;
+  transition: all linear 0.3s;
+  position: relative;
+  z-index: 1;
   background-image: linear-gradient(#BBA259, #876F32, #8B7330);
 }
-.gallery .shop-store:hover {
+.gallery .shop-store::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: linear-gradient(#AA161B, #E9383D, #A1151C);
+  opacity: 0;
+  z-index: -1;
+  transition: all linear 0.3s;
+  border-radius: 22px;
+}
+.gallery .shop-store:hover {
+  color: #fff;
+}
+.gallery .shop-store:hover::before {
+  opacity: 1;
 }
 .gallery .shop-store:hover span {
   color: #fff;
+  transition: all linear 0.3s;
 }
 .gallery .shop-store:hover i {
   color: #fff;
+  transition: all linear 0.3s;
 }
 .gallery .shop-store i {
   font-size: 30px;
@@ -1341,14 +1374,27 @@ html[dir=ltr] .newsletter p {
   top: 50%;
   display: flex;
   align-items: center;
+  transition: all linear 0.3s;
+  z-index: 1;
   justify-content: center;
   background-image: linear-gradient(#BBA259, #876F32, #8B7330);
 }
-.message button:hover {
+.message button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: linear-gradient(#AA161B, #E9383D, #A1151C);
+  opacity: 0;
+  z-index: -1;
+  transition: all linear 0.3s;
+  border-radius: 50%;
 }
 .message button:hover i {
   color: #fff;
+  transition: all linear 0.3s;
+}
+.message button:hover::before {
+  opacity: 1;
 }
 .message input {
   width: 358px;

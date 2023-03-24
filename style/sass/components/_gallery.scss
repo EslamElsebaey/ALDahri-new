@@ -8,15 +8,33 @@
         justify-content: center;
         height: 45px;
         border-radius: 22px;
+        transition: all linear .3s;
+        position: relative;
+        z-index: 1;
+        // background-size: 150%;
         background-image: linear-gradient(#BBA259 , #876F32   , #8B7330   );
-        &:hover{
-            // background-position: 0% 80%;
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
             background-image: linear-gradient(#AA161B , #E9383D  , #A1151C  );
+            opacity: 0;
+            z-index: -1;
+            transition: all linear .3s;
+            border-radius: 22px;
+        }
+        &:hover{
+            color: #fff;
+            &::before{
+                opacity: 1;
+            }
             span{
                 color: #fff;
+                transition: all linear .3s;
             }
             i{
                 color: #fff;
+                transition: all linear .3s;
             }
         }
         i{

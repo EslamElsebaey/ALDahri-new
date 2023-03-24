@@ -28,10 +28,28 @@
             color: #290a08;
             font-weight: 500;
             padding: 13px 43px;
+            position: relative;
+            z-index: 1;
+            transition: all linear .3s;
+            // background-size: 150%;
+            // // background-size:1px 400px; 
             background-image: linear-gradient(#BBA259 , #876F32   , #8B7330   );
-            &:hover{
+           
+            &::before{
+                content: "";
+                position: absolute;
+                inset: 0;
                 background-image: linear-gradient(#AA161B , #E9383D  , #A1151C  );
+                opacity: 0;
+                z-index: -1;
+                transition: all linear .3s;
+                border-radius: 25px;
+            }
+            &:hover{
                 color: #fff;
+                &::before{
+                    opacity: 1;
+                }
             }
         }
     }
