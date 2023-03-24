@@ -324,6 +324,7 @@ nav {
 }
 
 .main-nav {
+  transition: all linear 0.4s;
   padding: 13px 0;
   display: flex;
   align-items: center;
@@ -333,10 +334,6 @@ nav {
 .header-social .header-social-ancor:last-of-type {
   -webkit-margin-end: 0;
           margin-inline-end: 0;
-}
-
-.logo img {
-  transition: all linear 0.3s;
 }
 
 nav {
@@ -1536,15 +1533,16 @@ html[dir=ltr] .newsletter p {
 }
 .li-drop-scroll {
   padding: 8px 0;
-}
-
-.logo-scroll {
-  width: 70px;
   transition: all linear 0.3s;
 }
 
+.logo-scroll {
+  transform: scale(0.8);
+  transition: all linear 0.4s;
+}
+
 .main-nav-scroll {
-  padding: 8px 0;
+  padding: 0;
 }
 
 .fixed {

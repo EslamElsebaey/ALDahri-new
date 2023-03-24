@@ -12,15 +12,17 @@
 
 .li-drop-scroll {
     padding: 8px 0;
-}
-
-.logo-scroll {
-    width: 70px;
     transition: all linear .3s;
 }
 
+.logo-scroll {
+    // width: 70px;
+    transform: scale(0.8);
+    transition: all linear .4s;
+}
+
 .main-nav-scroll {
-   padding: 8px 0;
+   padding: 0;
 }
 
 

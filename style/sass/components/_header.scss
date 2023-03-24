@@ -153,6 +153,7 @@ nav{
      
 
 .main-nav{
+    transition: all linear .4s;
     padding: 13px  0;
     display: flex;
     align-items: center;
@@ -163,9 +164,9 @@ nav{
     margin-inline-end: 0;
 }
 
-.logo img {
-    transition: all linear .3s;
-}
+// .logo img {
+//     transition: all linear .3s;
+// }
 
 
 nav{
