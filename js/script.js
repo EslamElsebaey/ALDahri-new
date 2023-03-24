@@ -169,6 +169,7 @@ $(window).on("scroll", function () {
       if($(window).width() > 768){
         $(".mynav .li-drop").addClass("li-drop-scroll");
         $(".logo img").addClass("logo-scroll");
+        $(".logo img").removeClass("logo-scroll-top0");
         $(".main-nav").addClass("main-nav-scroll");
         $(".header-social .header-social-ancor").addClass("social-width")
       } 
@@ -176,6 +177,7 @@ $(window).on("scroll", function () {
   if ($(window).scrollTop() == 0){
     if($(window).width() > 768){
       $(".mynav .li-drop").removeClass("li-drop-scroll");
+      $(".logo img").addClass("logo-scroll-top0");
       $(".logo img").removeClass("logo-scroll");
       $(".main-nav").removeClass("main-nav-scroll");
       $(".header-social .header-social-ancor").removeClass("social-width")
