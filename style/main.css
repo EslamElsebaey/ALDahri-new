@@ -32,14 +32,6 @@ body {
   font-family: "sst-Arabic";
 }
 
-html[dir=rtl] body {
-  text-align: right;
-}
-
-html[dir=ltr] body {
-  text-align: left;
-}
-
 .item-parent {
   position: relative;
 }
